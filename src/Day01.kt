@@ -15,7 +15,7 @@ fun main() {
         val left = pairs.map { it[0].toInt() }
         val right = pairs.map { it[1].toInt() }
 
-        val similarity = left.zip(right){ l, r -> l * right.count { it == l }}
+        val similarity = left.zip(right){ l, _ -> l * right.count { it == l }}
         return similarity.sum()
     }
 
