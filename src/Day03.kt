@@ -1,7 +1,5 @@
 fun main() {
     fun part1(input: List<String>): Int {
-        var index = 0
-
         val regex = "mul\\((\\d+),(\\d+)\\)".toRegex()
         val result = input.map { line ->
             regex.findAll(line).toList().map {
